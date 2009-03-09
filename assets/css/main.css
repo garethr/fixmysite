@@ -1,0 +1,154 @@
+body, html {
+    color: #444;
+    background: #DEF1F8;
+    font-family: "Helvetica Neue";
+}
+a {
+    color: #195190;
+    text-decoration: none;
+}
+em {
+    font-style: italic;
+}
+a:hover {
+    text-decoration: underline;
+}
+#nav {
+    background: #222;
+    padding: 5px 0;
+}
+#nav li {
+    display: inline;
+}
+#nav a {
+    text-decoration: none;
+    color: #FFF;
+    padding: 10px;
+}
+#nav a:hover {
+    color: #ECECEC;
+}
+#nav span {
+    color: #777;
+    font-weight: normal;
+    font-size: 80%;
+}
+#search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 3px 10px;
+}
+#search label {
+    position: absolute;
+    left: -9999em;
+}
+#header {
+    padding: 15px 30px;
+}
+#header h1 {
+    color: #195190;
+    font-size: 200%;
+    background: url(../img/bubble.png) top left no-repeat;
+    padding: 25px 0 50px 140px;
+}
+#header h1 span {
+    color: #444;
+    display: block;
+    font-size: 50%;
+}
+#header p.sponsor {
+    position: absolute;
+    left: 170px;
+    top: 105px;
+    padding: 10px 0;
+}
+#header p.sponsor img {
+    position: relative;
+    top: 8px;
+    padding-right: 5px;
+}
+#content {
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #C7E9F2;
+    background: #FFF;
+    padding: 15px 30px 0;
+}
+#content h2 {
+    font-size: 125%;
+}
+#content h2 a {
+    color: #195190;
+    font-weight: bold;
+}
+#content p.data {
+    color: #444;
+    font-size: 85%;
+    margin-bottom: 10px;
+    margin-top: 2px;
+}
+#content p {
+    margin-bottom: 15px;
+}
+#content li {
+    border-top: 1px solid #ECECEC;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+#content li:first-child {
+    border-top: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+#content .comments {
+    background: #E2F4F8;
+    padding: 8px;
+    -webkit-border-radius: 10px;
+}
+#comments-form {
+    margin-bottom: 15px;
+    background: #E2F4F8;
+    padding: 15px;
+}
+#comments-form input.txt, #comments-form textarea {
+    width: 350px;
+    border: 1px solid #CCC;
+    padding: 3px;
+    margin-left: 140px;
+}
+#comments-form textarea {
+    height: 100px;
+}
+#comments-form label {
+    position: absolute;
+}
+#comments-form h2 {
+    margin-bottom: 5px;
+}
+#comments-form p {
+    width: 500px;
+    color: #999;
+}
+#comments-form div {
+    margin-bottom: 5px;
+} 
+#comments {
+    border-top: 1px solid #ECECEC;
+    padding-top: 15px;
+}
+#comments h2 {
+    margin-bottom: 15px;
+    color: #195190;
+}
+#comments li h2 {
+    margin-bottom: 5px;
+    color: #444;
+}
+#footer {
+    padding: 15px 30px;
+    color: #999;
+}
+#footer a {
+    color: #999;
+}

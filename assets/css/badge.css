@@ -1,0 +1,45 @@
+#badge {
+    background: #000;
+    color: #FFF;
+    border-color: #CCC;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    position: fixed;
+    padding: 10px;
+    top: 100px;
+    right: 0;    
+    cursor: pointer;
+    z-index: 50;
+}
+#badge:hover {
+    padding-right: 12px;
+}
+#feedback {
+    background: #FFF;
+    border-color: #CCC;
+    border-style: solid;
+    border-width: 5px;
+    position: fixed;
+    padding: 10px;
+    top: 100px;
+    right: 300px;
+    z-index: 50;
+    width: 250px;
+}
+#feedback label {
+    display: block;
+    margin-top: 10px;
+}
+#feedback p {
+    color: #888;
+    margin-bottom: 5px;
+}
+#feedback input.txt, #feedback textarea {
+    width: 200px;
+    border: 1px solid #CCC;
+    padding: 3px;
+}
+#feedback textarea {
+    width: 240px;
+    height: 70px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>FeedbackGov | {% block title %}Feedback on UK Government Web Sites{% endblock %}</title>
+
+    <link rel="stylesheet" href="/assets/css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/assets/css/main.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/assets/css/badge.css" type="text/css" media="screen" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/assets/js/badge.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+<body>
+    
+<ul id="nav">
+    <li><a href="/">Home</a></li>
+</ul>
+
+<div id="search">
+<form action="/" method="get">
+    <label for="q">Search by URL</label>
+    <input type="text" name="q" id="q" value="{{query}}"/>
+    <input type="submit" value="Search"/>
+</form>
+</div>
+
+<div id="header">
+{% block header %}
+
+{% endblock %}
+</div>
+
+<div id="content">
+{% block content %}
+
+{% endblock %}
+</div>
+
+<div id="footer">
+    <p>This application was originally build by Gareth Rushgrove of <a href="http://morethanseven.net">morethanseven.net</a>. The code will be on GitHub soon.</p>
+</div>
+
+</body>
+
+</html>

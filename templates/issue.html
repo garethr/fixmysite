@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}{{issue.title}}{% endblock %}
+
+{% block header %}
+    <h1>{{issue.title}} on {{issue.site.name}}<span>Posted {{issue.date|date:"jS F Y"}}</span> </h1>
+{% endblock %}
+
+{% block content %}
+
+
+<p>{{issue.description}}</p>
+
+<p>This is 1 of <a href="/site/{{issue.site.slug}}/">{{issue.site.issue_set.count}} issues</a> on {{issue.site.name}}.</p>
+
+<div id="comments">
+{% if issue.comment_set %}
+<h2>Other peoples views</h2>
+<ol>
+{% for comment in issue.comment_set %}
+    {% include "_comment.html" %}
+{% endfor %}
+<ol>
+{% endif %}
+</div>
+
+<div id="comments-form">
+    <h2>Have your say</h2>
+    <p>Have you had the same problem? Or are you a representative of the site in question? Please leave a comment and help out.</p>
+
+    <form action="" method="post">
+        <div>
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" class="txt"/>
+        </div>
+        <div>
+            <label for="email">Email address</label>
+            <input type="text" id="email" name="email" class="txt"/>
+        </div>
+        <div>
+            <label for="comment">Your comment</label>
+            <textarea id="comment" name="comment"></textarea>
+        </div>
+        <div>
+            <input type="submit" id="submit" name="submit" value="Add comment"/>
+        </div>
+    </form>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Feedback on {{site.name}}{% endblock %}
+
+{% block header %}
+    <h1>{{site.name}} <span>{{site.url}}</span></h1>
+{% endblock %}
+
+
+{% block content %}
+
+{% if site.issue_set %}
+<ol>
+{% for issue in site.issue_set %}
+    {% include "_issue.html" %}
+{% endfor %}
+<ol>
+{% endif %}
+
+{% endblock %}

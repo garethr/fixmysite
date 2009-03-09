@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <h1>FeedbackGov<span>Centralised Feedback and Discussion on UK Government Web Sites</span></h1>
+    <p class="sponsor"><img src="/assets/img/rs.png" width="25px" height="25px"/> A <a href="http://rewiredstate.org/">rewiredstate</a> project </p>
+{% endblock %}
+
+{% block content %}
+
+{% if sites.count %}
+<ul>
+{% for site in sites %}
+    {% include "_site.html" %}
+{% endfor %}
+</ul>
+{% else %}
+    {% if query %}
+        <p>No site details recored for {{query}}.</p>
+    {% else %}
+        <p>No issues logged just yet.</p>
+    {% endif %}
+{% endif %}
+
+{% endblock %}

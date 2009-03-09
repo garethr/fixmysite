@@ -1,0 +1,6 @@
+<li>
+    <h2><a href="/issue/{{issue.key}}/">{{issue.title}}</a></h2>
+    <p class="data">Posted {{issue.date|date:"jS F Y"}}</p>
+    <p>{{issue.description}}</p>
+    <p class="comments"><a href="/issue/{{issue.key}}/">Leave a comment</a> on this issue. {% if issue.comment_set.count %}{{issue.comment_set.count}} {% ifequal issue.comment_set.count 1 %}person{% else %}people{% endifequal %} already {% ifequal issue.comment_set.count 1 %}has{% else %}have{% endifequal %} done.{% endif %}</p>
+</li>    

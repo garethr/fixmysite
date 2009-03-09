@@ -1,0 +1,8 @@
+<li>
+    <h2><a href="/site/{{site.slug}}/">{{site.name}}</a></h2>
+    <p class="data">{{site.url}}</p>
+        {% if site.issue_set.count %}
+            This site has <a href="/site/{{site.slug}}/">{{site.issue_set.count}} reported issue{{ site.issue_set.count|pluralize }}</a>.
+        {% endif %}
+    </p>
+</li>
